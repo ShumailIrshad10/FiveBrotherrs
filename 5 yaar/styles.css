@@ -1,0 +1,181 @@
+/* Resetting default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and overall layout */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  background-color: greenyellow;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* Main Content */
+main {
+  padding: 40px 0;
+}
+
+/* Container for the profiles */
+.profiles-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 10%;
+}
+
+/* Profile card styling */
+.profile {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.profile:hover {
+  transform: translateY(-10px);
+}
+
+.profile-img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile h2 {
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.profile .bio {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Profile details page styling */
+.profile-detail {
+  text-align: center;
+  padding: 40px;
+}
+
+.profile-detail .profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-detail h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.profile-detail .bio {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.contact-list a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* Back to Home Button */
+.back-home-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.back-home-button:hover {
+  background-color: #555;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer p, footer a {
+  font-size: 1rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .profiles-container {
+    padding: 0 5%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .profile {
+    width: 80%;
+  }
+
+  .profile-detail {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .profile h2 {
+    font-size: 1.4rem;
+  }
+
+  .profile .bio, .profile-detail .bio {
+    font-size: 0.9rem;
+  }
+}
